@@ -85,7 +85,7 @@ export const NavLink = styled.span`
   &:not(:last-of-type) {
     margin-right: 40px;
 
-    @media ${device.tablet} {
+    @media ${device.laptop} {
       margin-right: 20px;
     }
 
@@ -141,7 +141,7 @@ export const Lang = styled.span`
   text-transform: uppercase;
 
   @media ${device.laptop} {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   &::after {
@@ -164,7 +164,7 @@ export const Lang = styled.span`
     }
   }
 
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     &::before {
       display: none;
     }
