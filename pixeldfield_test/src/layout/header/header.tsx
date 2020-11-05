@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NavBar } from "../../components/";
+import { NavBar } from "../../components";
 
 import {
   StyledHeader,
@@ -11,7 +11,7 @@ import {
   Text,
 } from "./styles";
 
-export const Header = () => {
+export const Header: React.FC = () => {
   return (
     <StyledHeader>
       <NavBar />

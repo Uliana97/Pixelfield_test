@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Button } from "../../components";
+import { Container, Button } from "..";
 
 import {
   StyledNavBar,
@@ -13,7 +13,7 @@ import {
   Lang,
 } from "./styles";
 
-export const NavBar = () => {
+export const NavBar: React.FC = () => {
   return (
     <StyledNavBar>
       <Container>

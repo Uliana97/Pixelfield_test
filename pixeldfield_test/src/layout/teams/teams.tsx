@@ -1,8 +1,8 @@
 import React from "react";
 
-import { TeamBlock } from "../../components/";
+import { TeamBlock } from "../../components";
 
-import { teamInfo, partnersInfo } from "./assets/fixtures.js";
+import { teamInfo, partnersInfo } from "./assets/fixtures";
 
 export const Teams = () => {
   return (

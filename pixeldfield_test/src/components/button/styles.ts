@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const ButtonContainer = styled.button`
+import {ButtonProps} from './button'
+
+export const ButtonContainer = styled.button<ButtonProps>`
   align-items: center;
   background: ${({ primary, theme: { colors } }) =>
     primary ? colors.blue : colors.white};

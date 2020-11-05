@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-import { device } from "../../styling/breakpoints/";
+import { device } from "../../styling/breakpoints";
+
+export type ImgType = {
+  img: string
+}
 
 export const StyledTeamBlock = styled.div`
   color: ${({ theme: { colors } }) => colors.blue};
@@ -29,7 +33,7 @@ export const Card = styled.div`
   margin-bottom: 20px;
 `;
 
-export const Img = styled.div`
+export const Img = styled.div<ImgType>`
   margin-bottom: 25px;
   ${({ img }) => (img ? `background: url(${img}) center/cover no-repeat` : "")};
   cursor: pointer;

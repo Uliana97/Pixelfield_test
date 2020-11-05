@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-import { device } from "../../styling/breakpoints/";
+import { device } from "../../styling/breakpoints";
 import logo from "./assets/logo.png";
 import arror from "./assets/arrow.svg";
 
