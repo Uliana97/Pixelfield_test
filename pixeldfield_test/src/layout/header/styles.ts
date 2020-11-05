@@ -16,7 +16,7 @@ export const Hero = styled.div`
 
 export const Title = styled.div`
   align-items: center;
-  background: url(${titleBg}) center repeat-x;
+  background: url(${titleBg}) center/cover no-repeat;
   display: flex;
   font-family: ${(props) => props.theme.fonts[0]};
   font-size: ${({ theme: { fontSizes } }) => fontSizes.xl};
