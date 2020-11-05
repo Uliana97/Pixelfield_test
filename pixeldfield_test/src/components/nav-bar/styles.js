@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 
+import { device } from "../../styling/breakpoints/";
 import logo from "./assets/logo.png";
 import arror from "./assets/arrow.svg";
 
@@ -34,6 +35,12 @@ export const Layout = styled.div`
   align-items: center;
   display: flex;
   min-height: 70px;
+
+  @media ${device.laptop} {
+    padding: 20px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 `;
 
 export const Logo = styled.div`
@@ -42,17 +49,31 @@ export const Logo = styled.div`
   height: 20px;
   margin-right: 40px;
   width: 210px;
+
+  @media ${device.laptop} {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
 `;
 
 export const Flex = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @media ${device.tablet} {
+    flex-direction: column;
+  }
 `;
 
 export const Nav = styled.div`
   align-items: center;
   display: flex;
+
+  @media ${device.tablet} {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
 `;
 
 export const NavLink = styled.span`
@@ -63,6 +84,14 @@ export const NavLink = styled.span`
 
   &:not(:last-of-type) {
     margin-right: 40px;
+
+    @media ${device.tablet} {
+      margin-right: 20px;
+    }
+
+    @media ${device.mobileL} {
+      margin-right: 10px;
+    }
   }
 
   &::after {
@@ -83,10 +112,23 @@ export const NavLink = styled.span`
       background-color: ${(props) => props.theme.colors.blue};
       bottom: -27px;
     }
+
+    @media ${device.tablet} {
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
   }
 `;
 
-export const Login = styled.div``;
+export const Login = styled.div`
+  @media ${device.tablet} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
 
 export const Lang = styled.span`
   color: ${({ theme: { colors } }) => colors.blue};
@@ -97,6 +139,10 @@ export const Lang = styled.span`
   margin-right: 52px;
   position: relative;
   text-transform: uppercase;
+
+  @media ${device.tablet} {
+    margin-right: 20px;
+  }
 
   &::after {
     ${After}
@@ -111,6 +157,16 @@ export const Lang = styled.span`
     &::before {
       background-color: ${(props) => props.theme.colors.blue};
       bottom: -27px;
+    }
+
+    @media ${device.tablet} {
+      margin-right: 20px;
+    }
+  }
+
+  @media ${device.laptop} {
+    &::before {
+      display: none;
     }
   }
 `;

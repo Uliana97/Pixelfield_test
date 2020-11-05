@@ -1,6 +1,6 @@
 import React from "react";
 
-import Theme from "../../theme";
+import Theme from "../../styling/theme";
 import { GlobalStyle } from "./styles";
 import { Header, Teams } from "../../components/";
 

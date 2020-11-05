@@ -1,24 +1,33 @@
 import styled from "styled-components";
 
+import { device } from "../../styling/breakpoints/";
+
 export const StyledTeamBlock = styled.div`
   color: ${({ theme: { colors } }) => colors.blue};
-  padding: 100px 0;
 `;
 
 export const Heading = styled.p`
   font-family: ${(props) => props.theme.fonts[0]};
   font-size: ${({ theme: { fontSizes } }) => fontSizes.l};
-  margin-bottom: 85px;
+  margin: 85px 0;
   text-align: center;
+
+  @media ${device.mobileL} {
+    font-size: ${({ theme: { fontSizes } }) => fontSizes.extraM};
+    margin: 25px 0;
+  }
 `;
 
 export const Cards = styled.div`
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 `;
 
-export const Card = styled.div``;
+export const Card = styled.div`
+  margin-bottom: 20px;
+`;
 
 export const Img = styled.div`
   margin-bottom: 25px;

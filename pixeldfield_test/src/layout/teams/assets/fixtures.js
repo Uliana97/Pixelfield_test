@@ -1,6 +1,5 @@
 import t1 from "./img/team1.jpg";
 import t2 from "./img/team2.jpg";
-import t3 from "./img/team3.jpg";
 import t4 from "./img/team4.jpg";
 import p1 from "./img/partner1.jpg";
 import p2 from "./img/partner2.jpg";
