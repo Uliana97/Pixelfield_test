@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 import {ButtonProps} from './button'
 
-export const ButtonContainer = styled.button<ButtonProps>`
+export const ButtonContainer = styled.a<ButtonProps>`
   align-items: center;
   background: ${({ primary, theme: { colors } }) =>
     primary ? colors.blue : colors.white};
   border: 2px solid transparent;
-  border: none;
   color: ${({ primary, theme: { colors } }) =>
     primary ? colors.white : colors.blue};
   cursor: pointer;
