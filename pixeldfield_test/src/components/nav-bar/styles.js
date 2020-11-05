@@ -140,8 +140,8 @@ export const Lang = styled.span`
   position: relative;
   text-transform: uppercase;
 
-  @media ${device.tablet} {
-    margin-right: 20px;
+  @media ${device.laptop} {
+    margin-right: 10px;
   }
 
   &::after {
