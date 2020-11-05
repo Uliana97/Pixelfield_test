@@ -6,6 +6,7 @@ export type ButtonProps = {
   text?: string
   mr?: number | string
   primary?: boolean
+  upper? : boolean
 }
 
 export const Button: React.FC<ButtonProps> = ({ text, ...rest }) => (

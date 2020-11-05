@@ -13,12 +13,12 @@ export const ButtonContainer = styled.button<ButtonProps>`
   cursor: pointer;
   display: inline-flex;
   font-size: ${({ theme: { fontSizes } }) => fontSizes.xs};
-  font-weight: bold;
   justify-content: center;
   outline: none;
   padding: 8px 20px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: ${({ upper }) =>
+    upper ? 'uppercase': 'none'};
   transition: all 0.2s ease-out;
   ${({ mr }) => (mr ? `margin-right: ${mr}` : "")};
 

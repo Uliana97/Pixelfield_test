@@ -36,8 +36,8 @@ export const NavBar: React.FC = () => {
             </Nav>
             <Login>
               <Lang>English</Lang>
-              <Button text="Log in" mr="15px" />
-              <Button text="Register" primary />
+              <Button text="Log in" mr="15px" upper />
+              <Button text="Register" primary upper />
             </Login>
           </Flex>
         </Layout>
