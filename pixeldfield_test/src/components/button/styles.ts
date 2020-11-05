@@ -15,12 +15,15 @@ export const ButtonContainer = styled.button<ButtonProps>`
   font-size: ${({ theme: { fontSizes } }) => fontSizes.xs};
   justify-content: center;
   outline: none;
-  padding: 8px 20px;
+  padding: ${({ upper }) =>
+    upper ? '8px 20px': '18px 20px'};
   text-decoration: none;
   text-transform: ${({ upper }) =>
     upper ? 'uppercase': 'none'};
   transition: all 0.2s ease-out;
   ${({ mr }) => (mr ? `margin-right: ${mr}` : "")};
+  min-width: 135px;
+  font-weight: bold;
 
   &:hover {
     color: ${({ primary, theme: { colors } }) =>

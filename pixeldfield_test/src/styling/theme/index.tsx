@@ -4,7 +4,9 @@ import { ThemeProvider } from "styled-components";
 const theme = {
   colors: {
     blue: "#0A345F",
+    lightBlue: ' #174D85;',
     white: "#fff",
+    vanil: "#F8F9FA;",
   },
   fonts: ["Libre Caslon Display", "serif"],
   fontSizes: {
@@ -17,7 +19,7 @@ const theme = {
   },
 };
 
-const Theme = ({ children }) => (
+const Theme: React.FC = ({ children }) => (
   <ThemeProvider theme={theme}>{children}</ThemeProvider>
 );
 

@@ -34,11 +34,11 @@ export const Card = styled.div`
 `;
 
 export const Img = styled.div<ImgType>`
-  margin-bottom: 25px;
   ${({ img }) => (img ? `background: url(${img}) center/cover no-repeat` : "")};
   cursor: pointer;
   display: inline-block;
   height: 278px;
+  margin-bottom: 25px;
   position: relative;
   transition: all 0.5s;
   width: 278px;
