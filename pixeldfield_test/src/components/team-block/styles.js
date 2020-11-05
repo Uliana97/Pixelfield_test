@@ -20,33 +20,39 @@ export const Cards = styled.div`
 
 export const Card = styled.div``;
 
-export const Img = styled.img`
+export const Img = styled.div`
   margin-bottom: 25px;
+  ${({ img }) => (img ? `background: url(${img}) center/cover no-repeat` : "")};
+  cursor: pointer;
+  display: inline-block;
+  height: 278px;
+  position: relative;
+  transition: all 0.5s;
   width: 278px;
-  /* transition: transform 0.5s;
 
   &::after {
+    background: transparent;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
+    transition: all 0.5s ease-out;
     width: 100%;
-    height: 100%;
-    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.15);
-    content: "";
-    opacity: 0;
-    z-index: -1;
   }
 
-  &:hover,
-  &:focus {
-    transform: scale3d(1.006, 1.006, 1);
-
+  &:hover {
     &::after {
-      opacity: 1;
+      background: linear-gradient(
+        0deg,
+        rgba(10, 52, 95, 0.4),
+        rgba(10, 52, 95, 0.4)
+      );
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.15);
     }
-  } */
+  }
 `;
 
 export const Title = styled.p`
@@ -54,8 +60,8 @@ export const Title = styled.p`
 `;
 
 export const SubTitle = styled.span`
-  font-size: ${({ theme: { fontSizes } }) => fontSizes.s};
   color: ${({ theme: { colors } }) => colors.blue};
-  text-decoration: none;
+  font-size: ${({ theme: { fontSizes } }) => fontSizes.s};
   opacity: 0.6;
+  text-decoration: none;
 `;

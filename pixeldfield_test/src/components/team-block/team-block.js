@@ -19,7 +19,7 @@ export const TeamBlock = ({ heading, data }) => (
       <Cards>
         {data.map(({ img, title, subtitle }) => (
           <Card>
-            <Img src={img} />
+            <Img as="a" href="/" img={img} />
             <Title>{title}</Title>
             <SubTitle as="a" href="/">
               {subtitle}

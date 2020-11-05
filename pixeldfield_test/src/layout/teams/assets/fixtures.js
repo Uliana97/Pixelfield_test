@@ -4,6 +4,7 @@ import t3 from "./img/team3.jpg";
 import t4 from "./img/team4.jpg";
 import p1 from "./img/partner1.jpg";
 import p2 from "./img/partner2.jpg";
+import p3 from "./img/partner3.jpg";
 import p4 from "./img/partner4.jpg";
 
 export const teamInfo = [
@@ -18,7 +19,7 @@ export const teamInfo = [
     subtitle: "Head of Sales & Distribution",
   },
   {
-    img: t3,
+    img: t1,
     title: "Jan Toman",
     subtitle: "Read bio",
   },
@@ -41,7 +42,7 @@ export const partnersInfo = [
     subtitle: "Investment group",
   },
   {
-    img: p1,
+    img: p3,
     title: "Mangopay",
     subtitle: "Investment group",
   },
