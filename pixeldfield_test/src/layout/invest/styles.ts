@@ -84,6 +84,8 @@ export const Heading = styled.div`
  font-family: ${(props) => props.theme.fonts[0]};
  font-size: ${({ theme: { fontSizes } }) => fontSizes.l};
  margin-bottom: 40px;
+ text-align: center;
+ padding: 0 10px;
 
 
  @media ${device.mobileL} {
